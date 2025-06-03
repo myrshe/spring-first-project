@@ -18,10 +18,7 @@
             </li>
             <li><a href="/profile/${currentId}">мой профиль</a></li>
             <li><a href="/globalFeed">глобальная лента</a></li>
-            <li><a href="/feedSubscription">лента подписок</a></li>
-            <#--<c:if test="${isAdmin}">
-                <li><a href="/allComments">админка</a></li>
-            </c:if>-->
+            <li><a href="/subscribeFeed">лента подписок</a></li>
         </ul>
     </nav>
 </header>

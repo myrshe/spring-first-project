@@ -7,10 +7,14 @@ import lombok.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-@Data
+@ToString(exclude = {"createdPosts", "posts", "comments", "following", "followers"})
+@EqualsAndHashCode(exclude = {"createdPosts", "posts", "comments", "following", "followers"})
+
 
 
 @Entity
@@ -33,9 +37,9 @@ public class User {
     private Role role;
 
 
-    private int subscribers_count;//подписчики
+    private int countFollowers;//подписчики
 
-    private int subscriptions_count;//подписки
+    private int countFollowing;//подписки
 
 
 

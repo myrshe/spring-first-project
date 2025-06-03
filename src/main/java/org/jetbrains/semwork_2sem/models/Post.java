@@ -1,30 +1,30 @@
 package org.jetbrains.semwork_2sem.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-
-@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
-@Data
+@ToString(exclude = {"user", "likes", "comments", "files"})
+@EqualsAndHashCode(exclude = {"user", "likes", "comments", "files"})
+
 
 @Entity
 
 public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long postId;
 
     private String text;
 
-    @Column(unique = true, nullable = false)
+    @Column(columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     private LocalDateTime date;
 
     @ManyToOne
@@ -33,7 +33,7 @@ public class Post {
 
     @ManyToMany
     @JoinTable(name= "posts_likes",
-            joinColumns = @JoinColumn(name = "post_id", referencedColumnName = "id"),
+            joinColumns = @JoinColumn(name = "post_id", referencedColumnName = "postId"),
             inverseJoinColumns = @JoinColumn(name = "account_id", referencedColumnName = "id"))
     private List<User> likes;
 
@@ -42,4 +42,11 @@ public class Post {
 
     @ManyToMany(mappedBy = "posts")
     private List<FileInfo> files = new ArrayList<>();
+
+    public boolean isLikedByUser(Long userId) {//проверка лайкнул ли пользователь пост (для отображения на фронте)
+        if (likes == null || likes.isEmpty()) {
+            return false;
+        }
+        return likes.stream().anyMatch(user -> user.getId().equals(userId));
+    }
 }

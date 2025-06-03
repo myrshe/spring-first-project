@@ -1,6 +1,14 @@
+const csrfToken = document.querySelector('meta[name="_csrf"]').getAttribute("content");
+const csrfHeader = document.querySelector('meta[name="_csrf_header"]').getAttribute("content");
+
+
 function toggleLike(postId, button) {
     fetch(`/like/${postId}`, {
-        method: 'POST'
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            [csrfHeader]: csrfToken
+        }
     }).then(response => {
         if (response.ok) {
             const likeIcon = button.querySelector('.like-icon img');
@@ -23,3 +31,4 @@ function toggleLike(postId, button) {
         }
     });
 }
+

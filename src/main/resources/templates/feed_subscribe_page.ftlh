@@ -6,21 +6,27 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Лента подписок</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/feed.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li>
-                <<#--a class="top" href="">
-                        <img src="<c:url value="/styles/pictures/logoMini.png"/>" alt="Логотип сайта">
-                    </a>-->
-            </li>
-            <li><a href="/profile/${currentId}">мой профиль</a></li>
-            <li><a href="/globalFeed">глобальная лента</a></li>
-            <li><a href="/subscribeFeed">лента подписок</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <div class="header">
+        <nav class="nav-header">
+            <ul>
+                <li>
+                    <a class="top" href="">
+                        <img src="/images/logoMini.png" alt="Логотип сайта">
+                    </a>
+                </li>
+                <li><a href="/profile/${currentId}">мой профиль</a></li>
+                <li><a href="/globalFeed">глобальная лента</a></li>
+                <li><a href="/subscribeFeed">лента подписок</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main class="main">
     <div class="container">

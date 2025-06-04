@@ -5,54 +5,52 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/createPost.css">
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Создать пост</title>
     <meta name="_csrf" content="${_csrf.token}"/>
     <meta name="_csrf_header" content="${_csrf.headerName}"/>
-    <script>
-        function sendFile() {
-            let formData = new FormData();
-            let files = ($('#file'))[0]['files'];
-            [].forEach.call(files, function (file, i, files) {
-                formData.append("file", file)
-            });
-
-            $.ajax({
-                type: "POST",
-                url: "/files",
-                data: formData,
-                processData: false,
-                contentType: false,
-                beforeSend: function(xhr) {
-                    xhr.setRequestHeader('X-CSRF-TOKEN', $('input[name="_csrf"]').val());
-                }
-            })
-                .done(function (response) {
-                    let fileUrl = 'http://localhost:8080/files/' + response;
-                    $('#photo').append('<img src = "' + fileUrl + '"/>')
-                })
-                .fail(function () {alert('Error')});
-        }
-    </script>
 </head>
 <body>
-<div>
-    <input type="file" id="file" name="file" placeholder="Имя файла..."/>
-    <input type="hidden" id="file_hidden">
-    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-    <button onclick="sendFile()">Загрузить файл</button>
-</div>
-<div id="photo"></div>
+<header class="header">
+        <div class="header">
+                <nav class="nav-header">
+                <ul>
+                    <li>
+                        <a class="top" href="">
+                            <img src="/images/logoMini.png" alt="Логотип сайта">
+                        </a>
+                    </li>
+                    <li><a href="/profile/${currentId}">мой профиль</a></li>
+                    <li><a href="/globalFeed">глобальная лента</a></li>
+                    <li><a href="/subscribeFeed">лента подписок</a></li>
+                </ul>
+            </nav>
+        </div>
+</header>
 <main>
     <div class="content">
         <div class="form-container post">
             <h2>Create a New Post</h2>
+            <form action="/createPost" method="post" enctype="multipart/form-data">
+                <label for="text">Введите текст:</label>
+                <textarea id="text" name="text" placeholder="Напишите здесь текст..." required></textarea>
 
+                <label for="file">Добавьте файлы(необязательно):</label>
+                <input type="file" id="file" name="files" multiple accept="image/*,video/*,audio/*">
+
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                <input type="submit" value="Опубликовать пост">
+            </form>
         </div>
     </div>
+    <#if error??>
+        <div class="error">${error}</div>
+    </#if>
 </main>
 </body>
 </html>

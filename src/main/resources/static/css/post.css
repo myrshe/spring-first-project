@@ -1,0 +1,52 @@
+.post {
+    margin-top: 3vw;
+    background-color: #3b342d;
+    padding: 1.5vw;
+    border: 0.13vw solid #2a2525;
+    margin-bottom: 1.5vw;
+    border-radius: 0.5vw;
+    width: 50vw;
+    align-content: center;
+}
+
+.post p {
+    font-size: 1.2vw;
+    color: #f8f4eb;
+    margin-bottom: 0.5vw;
+}
+
+.post small {
+    font-size: 1vw;
+    color: #a8a8a8;
+}
+
+.post-container a {
+    text-decoration: none;
+    color: #f8f4eb;
+    transition: color 0.3s ease;
+}
+
+.post-container a:hover {
+    color: #150e0e;
+}
+
+.utility-container img {
+    width: 1.5vw;
+    height: 1.5vw;
+    transition: transform 0.3s ease;
+}
+
+.utility-container img:hover {
+    transform: scale(1.2);
+}
+
+.post-image img {
+    max-width: 100%; /* Ограничиваем ширину изображения шириной контейнера */
+    max-height: 100%; /* Ограничиваем высоту изображения высотой контейнера */
+    width: auto; /* Сохраняем пропорции изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+    border-radius: 0.5vw; /* Скругление углов, если нужно */
+    display: block; /* Убираем лишние отступы вокруг изображения */
+    margin: 0 auto; /* Центрируем изображение по горизонтали */
+    object-fit: contain; /* Сохраняем пропорции, не обрезая изображение */
+}

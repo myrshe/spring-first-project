@@ -8,30 +8,36 @@
     <meta name="_csrf" content="${_csrf.token}">
     <meta name="_csrf_header" content="${_csrf.headerName}">
     <title>Профиль ${username}</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <#--a class="top" href="">
-                        <img src="<c:url value="/styles/pictures/logoMini.png"/>" alt="Логотип сайта">
-                    </a>-->
-                </li>
-                <li><a href="/profile/${currentId}">мой профиль</a></li>
-                <li><a href="/globalFeed">глобальная лента</a></li>
-                <li><a href="/subscribeFeed">лента подписок</a></li>
-                <#if role>
-                    <li><a href="/allComments">админка</a></li>
-                </#if>
-                <li class="logout">
-                    <form action="/logout" method="post" style="display:inline;">
-                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                        <button type="submit">выйти</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header">
+            <nav class="nav-header">
+                <ul>
+                    <li>
+                        <a class="top" href="">
+                            <img src="/images/logoMini.png" alt="Логотип сайта">
+                        </a>
+                    </li>
+                    <li><a href="/profile/${currentId}">мой профиль</a></li>
+                    <li><a href="/globalFeed">глобальная лента</a></li>
+                    <li><a href="/subscribeFeed">лента подписок</a></li>
+                    <#if role>
+                        <li><a href="/allComments">админка</a></li>
+                    </#if>
+                    <li>
+                        <form action="/logout" method="post" style="display:inline;">
+                            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                            <button type="submit">выйти</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main">
         <div class="container">

@@ -16,6 +16,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.UUID;
 
 @Service
@@ -28,7 +29,10 @@ public class FileStorageServiceImpl implements FileStorageService {
     private String storagePath;
 
     @Override
-    public String saveFile(MultipartFile uploadFile) {
+    public FileInfo saveFile(MultipartFile uploadFile) {
+        if (uploadFile.isEmpty()) {
+            throw new IllegalArgumentException("File is empty");
+        }
         String storageName = UUID.randomUUID() + "_" + uploadFile.getOriginalFilename();
         // + "." + FilenameUtils.getExtention(uploadFile.getOriginalFilename());
 
@@ -37,6 +41,7 @@ public class FileStorageServiceImpl implements FileStorageService {
                 .originalFileName(uploadFile.getOriginalFilename())
                 .size(uploadFile.getSize())
                 .storageFileName(storageName)
+                .posts(new ArrayList<>())
                 .url(storagePath + "\\" + storageName)
                 .build();
 
@@ -46,9 +51,8 @@ public class FileStorageServiceImpl implements FileStorageService {
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
-
-        filesInfoRepository.save(file);
-        return file.getStorageFileName();
+//        filesInfoRepository.save(file);
+        return file;
     }
 
     @Override

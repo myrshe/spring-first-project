@@ -8,21 +8,26 @@
     <meta name="_csrf" content="${_csrf.token}">
     <meta name="_csrf_header" content="${_csrf.headerName}">
     <title>Пост</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/postAndComments.css">
+    <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li>
-                <<#--a class="top" href="">
-                        <img src="<c:url value="/styles/pictures/logoMini.png"/>" alt="Логотип сайта">
-                    </a>-->
-            </li>
-            <li><a href="/profile/${currentId}">мой профиль</a></li>
-            <li><a href="/globalFeed">глобальная лента</a></li>
-            <li><a href="/subscribeFeed">лента подписок</a></li>
-        </ul>
-    </nav>
+<header class="header">
+    <div class="header">
+        <nav class="nav-header">
+            <ul>
+                <li>
+                    <a class="top" href="">
+                        <img src="/images/logoMini.png" alt="Логотип сайта">
+                    </a>
+                </li>
+                <li><a href="/profile/${currentId}">мой профиль</a></li>
+                <li><a href="/globalFeed">глобальная лента</a></li>
+                <li><a href="/subscribeFeed">лента подписок</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
     <div class="content">
@@ -56,7 +61,7 @@
 
         <h3>Добавить комментарий:</h3>
         <form action="/comment/${post.id}" method="post">
-            <input type="hidden" name="post_id" value="${post.id}">
+<#--            <input type="hidden" name="post_id" value="${post.id}">-->
             <textarea name="text" rows="10" cols="200" required></textarea><br>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
             <button type="submit">Отправить</button>

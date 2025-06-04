@@ -14,7 +14,6 @@ import java.util.List;
 @ToString(exclude = {"user", "likes", "comments", "files"})
 @EqualsAndHashCode(exclude = {"user", "likes", "comments", "files"})
 
-
 @Entity
 
 public class Post {

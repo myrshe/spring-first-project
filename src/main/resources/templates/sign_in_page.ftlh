@@ -8,9 +8,10 @@
     <meta name="_csrf" content="${_csrf.token}">
     <meta name="_csrf_header" content="${_csrf.headerName}">
     <title>Авторизация</title>
+    <link rel="stylesheet" href="/css/signIn.css">
 </head>
 <body>
-<#--<img src="/images/logoMini.png" alt="логотип">-->
+<img src="/images/logoMini.png" alt="логотип">
 <div class="form-container">
     <h1>virtuoz</h1>
     <span>вход</span>

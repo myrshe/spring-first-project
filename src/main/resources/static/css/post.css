@@ -40,13 +40,44 @@
     transform: scale(1.2);
 }
 
-.post-image img {
-    max-width: 100%; /* Ограничиваем ширину изображения шириной контейнера */
-    max-height: 100%; /* Ограничиваем высоту изображения высотой контейнера */
-    width: auto; /* Сохраняем пропорции изображения */
-    height: auto; /* Сохраняем пропорции изображения */
-    border-radius: 0.5vw; /* Скругление углов, если нужно */
-    display: block; /* Убираем лишние отступы вокруг изображения */
-    margin: 0 auto; /* Центрируем изображение по горизонтали */
-    object-fit: contain; /* Сохраняем пропорции, не обрезая изображение */
+/* Стили для контейнера с файлами */
+.post-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.post-files {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding-bottom: 10px; /* Для скроллбара */
+    -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+}
+
+/* Убираем стандартный скроллбар */
+.post-files::-webkit-scrollbar {
+    height: 5px;
+}
+
+.post-files::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.post-file {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.post-image img,
+.post-video,
+.post-audio {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 8px;
+    object-fit: contain;
 }

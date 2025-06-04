@@ -12,6 +12,7 @@ import org.jetbrains.semwork_2sem.services.intefaces.FileStorageService;
 import org.jetbrains.semwork_2sem.services.intefaces.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -41,6 +42,7 @@ public class PostServiceImpl implements PostService {
         return PostDto.from(allPosts, currentUserId);
     }
 
+    @EntityGraph(attributePaths = {"likedByUsers"})
     @Override
     public List<PostDto> getAllPostsByUserId(Long userId, Long currentUserId) {
         List<Post> allPostsOfUser = postRepository.findByUserId(userId);

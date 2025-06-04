@@ -78,36 +78,28 @@
                                 <h2>${post.username}</h2>
                             </a>
                             <p>${post.text}</p>
+
                             <div class="post-files">
                                 <#list post.files as file>
-                                    <#if file.type?starts_with("image/")>
-                                    <#-- Изображения -->
-                                        <figure class="post-file">
-                                            <img src="/files/${file.storageFileName}"
-                                                 alt="${file.originalFileName}"
-                                                 loading="lazy"
-                                                 class="post-image">
-                                        </figure>
-                                    <#elseif file.type?starts_with("video/")>
-                                    <#-- Видео -->
-                                        <div class="post-file">
+                                    <div class="post-file">
+                                        <#if file.type?starts_with("image/")>
+                                            <figure class="post-image">
+                                                <img src="/files/${file.storageFileName}"
+                                                     alt="${file.originalFileName}"
+                                                     loading="lazy">
+                                            </figure>
+                                        <#elseif file.type?starts_with("video/")>
                                             <video controls class="post-video">
                                                 <source src="/files/${file.storageFileName}" type="${file.type}">
-                                                Ваш браузер не поддерживает видео.
                                             </video>
-                                        </div>
-                                    <#elseif file.type?starts_with("audio/")>
-                                    <#-- Аудио -->
-                                        <div class="post-file">
+                                        <#elseif file.type?starts_with("audio/")>
                                             <audio controls class="post-audio">
                                                 <source src="/files/${file.storageFileName}" type="${file.type}">
-                                                Ваш браузер не поддерживает аудио.
                                             </audio>
-                                        </div>
-                                    </#if>
+                                        </#if>
+                                    </div>
                                 </#list>
                             </div>
-
                             <small>${post.date}</small>
                         </div>
                         <div class="utility-container">

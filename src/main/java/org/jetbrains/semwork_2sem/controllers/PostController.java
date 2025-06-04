@@ -75,20 +75,19 @@ public class PostController {
 
     @PostMapping("/createPost")
     public String createPost(PostForm postForm,
-                             /*@RequestParam(value = "files", required = false) List<MultipartFile> files,*/
                              @AuthenticationPrincipal MyUserDetails currentUser,
                              RedirectAttributes redirectAttributes) {
         Long currentUserId = currentUser.getUser().getId();
         if (postForm.getFiles() != null && postForm.getFiles().size() > 10) {
-            redirectAttributes.addAttribute("error", "нельзя добавить больше 10 файлов");
-            return "redirect:/profile/" + currentUserId;
+            redirectAttributes.addFlashAttribute("error", "Нельзя добавить больше 10 файлов");
+            return "redirect:/createPost";
         }
         try {
             postService.createPost(currentUserId, postForm.getText(), postForm.getFiles());
             return "redirect:/profile/" + currentUserId;
         } catch ( Exception e) {
-            redirectAttributes.addAttribute("error", "ошибка при создании файлов"+ e.getMessage());
-            return "redirect:/profile/" + currentUserId;
+            redirectAttributes.addFlashAttribute("error", "Ошибка: " + e.getMessage());
+            return "redirect:/createPost";
         }
     }
 

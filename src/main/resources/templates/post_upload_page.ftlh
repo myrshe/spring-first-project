@@ -35,12 +35,15 @@
 <main>
     <div class="content">
         <div class="form-container post">
-            <h2>Create a New Post</h2>
+            <h2>Создать новый пост</h2>
+            <#if error??>
+                <div class="error-message">${error}</div>
+            </#if>
             <form action="/createPost" method="post" enctype="multipart/form-data">
                 <label for="text">Введите текст:</label>
                 <textarea id="text" name="text" placeholder="Напишите здесь текст..." required></textarea>
 
-                <label for="file">Добавьте файлы(необязательно):</label>
+                <label for="file">Добавить файлы(не больше 10):</label>
                 <input type="file" id="file" name="files" multiple accept="image/*,video/*,audio/*">
 
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
@@ -48,9 +51,6 @@
             </form>
         </div>
     </div>
-    <#if error??>
-        <div class="error">${error}</div>
-    </#if>
 </main>
 </body>
 </html>

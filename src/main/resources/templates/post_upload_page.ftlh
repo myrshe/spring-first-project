@@ -29,6 +29,7 @@
                     <li><a href="/globalFeed">глобальная лента</a></li>
                     <li><a href="/subscribeFeed">лента подписок</a></li>
                     <li><a href="/topAuthors">топ авторов</a></li>
+                    <li><a href="/tag/demo">демки</a></li>
                 </ul>
             </nav>
         </div>

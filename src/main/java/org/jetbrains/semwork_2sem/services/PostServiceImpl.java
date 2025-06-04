@@ -1,7 +1,9 @@
 package org.jetbrains.semwork_2sem.services;
 
 import jakarta.transaction.Transactional;
+import org.jetbrains.semwork_2sem.converters.TagToTagDtoConverter;
 import org.jetbrains.semwork_2sem.dto.PostDto;
+import org.jetbrains.semwork_2sem.dto.TagDto;
 import org.jetbrains.semwork_2sem.models.FileInfo;
 import org.jetbrains.semwork_2sem.models.Post;
 import org.jetbrains.semwork_2sem.models.Tag;
@@ -13,7 +15,6 @@ import org.jetbrains.semwork_2sem.repository.UsersRepository;
 import org.jetbrains.semwork_2sem.services.intefaces.FileStorageService;
 import org.jetbrains.semwork_2sem.services.intefaces.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.EntityGraph;
@@ -23,6 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Service
@@ -42,6 +44,9 @@ public class PostServiceImpl implements PostService {
 
     @Autowired
     private TagRepository tagRepository;
+
+    @Autowired
+    private TagToTagDtoConverter tagToDtoConverter;
 
     @Override
     public List<PostDto> getAllPosts(Long currentUserId) {
@@ -137,6 +142,11 @@ public class PostServiceImpl implements PostService {
     public List<PostDto> getAllByTag(Long currentUserId, String tag, int limit) {
         List<Post> posts = postRepository.findTopPostsByTagName(tag, PageRequest.of(0, limit));
         return PostDto.from(posts, currentUserId);
+    }
+
+
+    public List<TagDto> convertTagsToDtos(List<Tag> tags) {
+        return tags.stream().map(tagToDtoConverter::convert).collect(Collectors.toList());
     }
 
 }

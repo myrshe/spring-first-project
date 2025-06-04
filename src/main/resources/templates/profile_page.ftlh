@@ -30,6 +30,7 @@
                         <li><a href="/allComments">админка</a></li>
                     </#if>
                     <li><a href="/topAuthors">топ авторов</a></li>
+                    <li><a href="/tag/demo">демки</a></li>
                     <li>
                         <form action="/logout" method="post" style="display:inline;">
                             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">

@@ -12,8 +12,10 @@ import java.util.List;
 
 public interface PostRepository extends JpaRepository<Post, Long> {
 
+    @Query(value = "select * from post order by date desc", nativeQuery = true)
     List<Post> findAll();
 
+    @Query(value = "select * from post where user_id = :userId order by date desc", nativeQuery = true)
     List<Post> findByUserId(Long userId);
 
     boolean existsByPostIdAndLikesContaining(Long postId, User user);

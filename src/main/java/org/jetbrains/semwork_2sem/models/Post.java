@@ -1,7 +1,9 @@
 package org.jetbrains.semwork_2sem.models;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.persistence.*;
 import lombok.*;
+import org.jetbrains.semwork_2sem.converters.DateConverter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

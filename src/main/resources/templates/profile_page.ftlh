@@ -78,6 +78,36 @@
                                 <h2>${post.username}</h2>
                             </a>
                             <p>${post.text}</p>
+                            <div class="post-files">
+                                <#list post.files as file>
+                                    <#if file.type?starts_with("image/")>
+                                    <#-- Изображения -->
+                                        <figure class="post-file">
+                                            <img src="/files/${file.storageFileName}"
+                                                 alt="${file.originalFileName}"
+                                                 loading="lazy"
+                                                 class="post-image">
+                                        </figure>
+                                    <#elseif file.type?starts_with("video/")>
+                                    <#-- Видео -->
+                                        <div class="post-file">
+                                            <video controls class="post-video">
+                                                <source src="/files/${file.storageFileName}" type="${file.type}">
+                                                Ваш браузер не поддерживает видео.
+                                            </video>
+                                        </div>
+                                    <#elseif file.type?starts_with("audio/")>
+                                    <#-- Аудио -->
+                                        <div class="post-file">
+                                            <audio controls class="post-audio">
+                                                <source src="/files/${file.storageFileName}" type="${file.type}">
+                                                Ваш браузер не поддерживает аудио.
+                                            </audio>
+                                        </div>
+                                    </#if>
+                                </#list>
+                            </div>
+
                             <small>${post.date}</small>
                         </div>
                         <div class="utility-container">

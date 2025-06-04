@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.jetbrains.semwork_2sem.models.FileInfo;
 import org.jetbrains.semwork_2sem.models.Post;
 
 import java.time.LocalDateTime;
@@ -24,6 +25,7 @@ public class PostDto {
     private String username;
     private Integer likesCount;
     private boolean likedOrNo;
+    private List<FileInfo> files;
 
 
     public static PostDto from(Post post, Long currentUserId) {
@@ -37,6 +39,7 @@ public class PostDto {
                 .username(post.getUser().getUsername())
                 .likesCount(likesCount)
                 .likedOrNo(isLiked)
+                .files(post.getFiles())
                 .build();
     }
 

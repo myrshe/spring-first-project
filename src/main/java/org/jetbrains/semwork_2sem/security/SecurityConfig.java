@@ -24,7 +24,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.ignoringRequestMatchers("/signUp"))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/signUp", "/signIn").anonymous()//только для неавторизованных пользователей
-                        .requestMatchers("/static/**", "/images/**", "/css/**").permitAll()
+                        .requestMatchers("/static/**", "/images/**", "/css/**", "/files/**").permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )

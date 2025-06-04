@@ -80,5 +80,11 @@ public class UserServiceImpl implements UserService {
         return user.getCountFollowers();
     }
 
+    @Override
+    public List<UserDto> getTopAuthors() {
+        List<User> top3Users = usersRepository.findTop3User();
+        return UserDto.from(top3Users);
+    }
+
 
 }

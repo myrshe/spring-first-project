@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.jetbrains.semwork_2sem.models.FileInfo;
 import org.jetbrains.semwork_2sem.models.Post;
+import org.jetbrains.semwork_2sem.models.Tag;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class PostDto {
     private String username;
     private Integer likesCount;
     private boolean likedOrNo;
+    private List<Tag> tags;
     private List<FileInfo> files;
 
 
@@ -40,6 +42,7 @@ public class PostDto {
                 .likesCount(likesCount)
                 .likedOrNo(isLiked)
                 .files(post.getFiles())
+                .tags(post.getTags())
                 .build();
     }
 

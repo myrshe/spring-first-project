@@ -4,13 +4,17 @@ import jakarta.transaction.Transactional;
 import org.jetbrains.semwork_2sem.dto.PostDto;
 import org.jetbrains.semwork_2sem.models.FileInfo;
 import org.jetbrains.semwork_2sem.models.Post;
+import org.jetbrains.semwork_2sem.models.Tag;
 import org.jetbrains.semwork_2sem.models.User;
 import org.jetbrains.semwork_2sem.repository.FileInfoRepository;
 import org.jetbrains.semwork_2sem.repository.PostRepository;
+import org.jetbrains.semwork_2sem.repository.TagRepository;
 import org.jetbrains.semwork_2sem.repository.UsersRepository;
 import org.jetbrains.semwork_2sem.services.intefaces.FileStorageService;
 import org.jetbrains.semwork_2sem.services.intefaces.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.stereotype.Service;
@@ -35,6 +39,9 @@ public class PostServiceImpl implements PostService {
 
     @Autowired
     private FileStorageService fileStorageService;
+
+    @Autowired
+    private TagRepository tagRepository;
 
     @Override
     public List<PostDto> getAllPosts(Long currentUserId) {
@@ -84,7 +91,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     @Transactional
-    public void createPost(Long userId, String text, List<MultipartFile> files) {
+    public void createPost(Long userId, String text, List<MultipartFile> files, String tags) {
         if (files != null && files.size() > 10) {
             throw new IllegalArgumentException("Нельзя прикрепить больше 10 файлов");
         }
@@ -98,10 +105,21 @@ public class PostServiceImpl implements PostService {
                 .comments(new ArrayList<>())
                 .date(LocalDateTime.now())
                 .files(new ArrayList<>())
+                .tags(new ArrayList<>())
                 .build();
 
         postRepository.save(post);
 
+        if (tags != null && !tags.isBlank()) {
+            String[] tagNames = tags.toLowerCase().split("\\s+");
+
+            for (String tagNameEntity : tagNames) {
+                String tagName = tagNameEntity.startsWith("#") ? tagNameEntity.substring(1) : tagNameEntity;
+
+                Tag tag = tagRepository.findByName(tagName).orElseGet(() -> tagRepository.save(Tag.builder().name(tagName).build()));
+                post.getTags().add(tag);
+            }
+        }
         if (files != null && !files.isEmpty()) {
             for (MultipartFile file : files) {
                 if (file.isEmpty()) continue;
@@ -115,5 +133,10 @@ public class PostServiceImpl implements PostService {
         }
     }
 
+    @Override
+    public List<PostDto> getAllByTag(Long currentUserId, String tag, int limit) {
+        List<Post> posts = postRepository.findTopPostsByTagName(tag, PageRequest.of(0, limit));
+        return PostDto.from(posts, currentUserId);
+    }
 
 }

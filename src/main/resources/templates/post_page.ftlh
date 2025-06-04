@@ -25,6 +25,7 @@
                 <li><a href="/profile/${currentId}">мой профиль</a></li>
                 <li><a href="/globalFeed">глобальная лента</a></li>
                 <li><a href="/subscribeFeed">лента подписок</a></li>
+                <li><a href="/topAuthors">топ авторов</a></li>
             </ul>
         </nav>
     </div>

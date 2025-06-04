@@ -1,6 +1,7 @@
 package org.jetbrains.semwork_2sem.security;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,6 +15,9 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
+    @Value("${storage.path}")
+    private String storagePath;
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -24,7 +28,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.ignoringRequestMatchers("/signUp"))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/signUp", "/signIn").anonymous()//только для неавторизованных пользователей
-                        .requestMatchers("/static/**", "/images/**", "/css/**", "/files/**").permitAll()
+                        .requestMatchers("/static/**", "/images/**", "/css/**", "/files/**", "/**.js").permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )

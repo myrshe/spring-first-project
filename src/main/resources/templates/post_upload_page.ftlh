@@ -28,6 +28,7 @@
                     <li><a href="/profile/${currentId}">мой профиль</a></li>
                     <li><a href="/globalFeed">глобальная лента</a></li>
                     <li><a href="/subscribeFeed">лента подписок</a></li>
+                    <li><a href="/topAuthors">топ авторов</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,6 +46,9 @@
 
                 <label for="file">Добавить файлы(не больше 10):</label>
                 <input type="file" id="file" name="files" multiple accept="image/*,video/*,audio/*">
+
+                <label for="tags">Добавьте теги через пробел :</label>
+                <input type="text" id="tags" name="tags" placeholder="#vocal #notes">
 
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
                 <input type="submit" value="Опубликовать пост">

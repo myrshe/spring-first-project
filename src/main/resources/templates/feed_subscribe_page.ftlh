@@ -5,6 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="_csrf" content="${_csrf.token}">
+    <meta name="_csrf_header" content="${_csrf.headerName}">
     <title>Лента подписок</title>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/feed.css">
@@ -24,6 +26,7 @@
                 <li><a href="/profile/${currentId}">мой профиль</a></li>
                 <li><a href="/globalFeed">глобальная лента</a></li>
                 <li><a href="/subscribeFeed">лента подписок</a></li>
+                <li><a href="/topAuthors">топ авторов</a></li>
             </ul>
         </nav>
     </div>
@@ -38,7 +41,11 @@
                             <h2>${post.username}</h2>
                         </a>
                         <p>${post.text}</p>
-
+                        <#if post.tags?has_content>
+                            <#list post.tags as tag>
+                                <a href="/tag/${tag.name}">#${tag.name} </a>
+                            </#list>
+                        </#if>
                         <div class="post-files">
                             <#list post.files as file>
                                 <div class="post-file">

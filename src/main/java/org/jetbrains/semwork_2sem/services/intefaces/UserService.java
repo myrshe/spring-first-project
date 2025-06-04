@@ -12,4 +12,5 @@ public interface UserService {
     List<UserDto> getFollowers(Long userId); // подписчики
     int countFollowing(Long userId);//подписки
     int countFollowers(Long userId);//подписчики
+    List<UserDto> getTopAuthors();
 }

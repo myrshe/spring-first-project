@@ -21,7 +21,7 @@ public class FeedController {
                                     Model model) {
         List<PostDto> allPosts = postService.getAllPosts(currentUser.getUser().getId());
 
-        model.addAttribute("allPosts", allPosts);
+        model.addAttribute("posts", allPosts);
         model.addAttribute("currentId", currentUser.getUser().getId());
 
         return "feed_global_page";

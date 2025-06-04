@@ -48,4 +48,12 @@ public class Post {
         }
         return likes.stream().anyMatch(user -> user.getId().equals(userId));
     }
+
+    @ManyToMany
+    @JoinTable(
+            name = "post_tags",
+            joinColumns = @JoinColumn(name = "post_id"),
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
+    )
+    private List<Tag> tags = new ArrayList<>();
 }

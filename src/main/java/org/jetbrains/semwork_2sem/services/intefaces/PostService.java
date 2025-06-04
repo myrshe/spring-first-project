@@ -11,5 +11,6 @@ public interface PostService {
     void like(Long userId, Long postId);
     PostDto getByPostId(Long postId, Long currentUserId);
     List<PostDto> getAllBySubscription(Long currentId);
-    void createPost(Long userId, String text, List<MultipartFile> files);
+    void createPost(Long userId, String text, List<MultipartFile> files, String tags);
+    List<PostDto> getAllByTag(Long currentUserId, String tag, int limit);
 }

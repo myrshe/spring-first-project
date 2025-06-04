@@ -16,4 +16,5 @@ public class PostForm {
 
     private String text;
     private List<MultipartFile> files;
+    private String tags;
 }

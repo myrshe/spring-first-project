@@ -29,6 +29,7 @@
                     <#if role>
                         <li><a href="/allComments">админка</a></li>
                     </#if>
+                    <li><a href="/topAuthors">топ авторов</a></li>
                     <li>
                         <form action="/logout" method="post" style="display:inline;">
                             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
@@ -78,7 +79,11 @@
                                 <h2>${post.username}</h2>
                             </a>
                             <p>${post.text}</p>
-
+                            <#if post.tags?has_content>
+                                <#list post.tags as tag>
+                                    <a href="/tag/${tag.name}">#${tag.name} </a>
+                                </#list>
+                            </#if>
                             <div class="post-files">
                                 <#list post.files as file>
                                     <div class="post-file">
@@ -129,7 +134,6 @@
         </div>
     </main>
     <script src="/like.js"></script>
-
 </body>
 
 </html>

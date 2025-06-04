@@ -83,7 +83,7 @@ public class PostController {
             return "redirect:/createPost";
         }
         try {
-            postService.createPost(currentUserId, postForm.getText(), postForm.getFiles());
+            postService.createPost(currentUserId, postForm.getText(), postForm.getFiles(), postForm.getTags());
             return "redirect:/profile/" + currentUserId;
         } catch ( Exception e) {
             redirectAttributes.addFlashAttribute("error", "Ошибка: " + e.getMessage());

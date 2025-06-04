@@ -50,6 +50,7 @@ public class ProfileController {
         boolean isAdmin = userProfile.getRole() == Role.ADMIN;
 
 
+
         model.addAttribute("countFollowers", countFollowers);
         model.addAttribute("countFollowing", countFollowing);
         model.addAttribute("currentId", currentUserId);

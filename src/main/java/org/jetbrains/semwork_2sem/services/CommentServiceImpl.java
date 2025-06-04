@@ -39,4 +39,15 @@ public class CommentServiceImpl implements CommentService {
                 .build();
         commentRepository.save(comment);
     }
+
+    @Override
+    public List<CommentDto> getAllComments() {
+        List<Comment> comments = commentRepository.findAll();
+        return CommentDto.from(comments);
+    }
+
+    @Override
+    public void remove(Long commentId) {
+        commentRepository.deleteById(commentId);
+    }
 }

@@ -8,4 +8,6 @@ import java.util.List;
 public interface CommentService {
     List<CommentDto> findAllByPostId(Long postId);
     public void addComment(CommentForm commentForm, Long currentUserId, Long postId);
+    public List<CommentDto> getAllComments();
+    void remove(Long postId);
 }

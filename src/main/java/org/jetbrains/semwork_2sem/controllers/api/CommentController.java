@@ -20,13 +20,13 @@ public class CommentController {
 
 
     @GetMapping("/post/{post-id}")
-    public ResponseEntity<List<CommentDto>> getAllByPost(@PathVariable Long postId) {
+    public ResponseEntity<List<CommentDto>> getAllByPost(@PathVariable("post-id") Long postId) {
         List<CommentDto> commentsByPost = commentService.findAllByPostId(postId);
         return ResponseEntity.ok(commentsByPost);
     }
 
     @PostMapping("/post/{post-id}")
-    public ResponseEntity<Void> addComment(@PathVariable Long postId,
+    public ResponseEntity<Void> addComment(@PathVariable("post-id") Long postId,
                                            @RequestBody CommentForm commentForm,
                                            @AuthenticationPrincipal MyUserDetails currentUser) {
         commentService.addComment(commentForm, currentUser.getUser().getId(), postId);

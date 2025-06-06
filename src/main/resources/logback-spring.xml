@@ -1,5 +1,5 @@
 <configuration>
-    <!-- Логгер для ошибок пользователей -->
+    <!-- ошибки пользователя -->
     <appender name="USER_ERRORS" class="ch.qos.logback.core.FileAppender">
         <file>logs/user-errors.log</file>
         <append>true</append>
@@ -8,7 +8,7 @@
         </encoder>
     </appender>
 
-    <!-- Логгер для ошибок постов -->
+    <!-- ошибки постов -->
     <appender name="POST_ERRORS" class="ch.qos.logback.core.FileAppender">
         <file>logs/post-errors.log</file>
         <append>true</append>
@@ -17,7 +17,7 @@
         </encoder>
     </appender>
 
-    <!-- Логгер для ошибок комментариев -->
+    <!-- ошибки комментариев -->
     <appender name="COMMENT_ERRORS" class="ch.qos.logback.core.FileAppender">
         <file>logs/comment-errors.log</file>
         <append>true</append>
@@ -26,7 +26,7 @@
         </encoder>
     </appender>
 
-    <!-- Логгер для остальных ошибок API -->
+    <!-- для всех остальных ошибок -->
     <appender name="API_ERRORS" class="ch.qos.logback.core.FileAppender">
         <file>logs/api-errors.log</file>
         <append>true</append>
@@ -35,22 +35,18 @@
         </encoder>
     </appender>
 
-    <!-- Логгер для ошибок пользователей -->
     <logger name="user" level="ERROR" additivity="false">
         <appender-ref ref="USER_ERRORS"/>
     </logger>
 
-    <!-- Логгер для ошибок постов -->
     <logger name="post" level="ERROR" additivity="false">
         <appender-ref ref="POST_ERRORS"/>
     </logger>
 
-    <!-- Логгер для ошибок комментариев -->
     <logger name="comment" level="ERROR" additivity="false">
         <appender-ref ref="COMMENT_ERRORS"/>
     </logger>
 
-    <!-- Корневой логгер для всех остальных ошибок -->
     <root level="INFO">
         <appender-ref ref="API_ERRORS"/>
     </root>

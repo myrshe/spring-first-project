@@ -167,6 +167,9 @@ public class PostServiceImpl implements PostService {
                 }
                 postRepository.save(post);
             }
+            List<TagDto> tagDtos = convertTagsToDtos(post.getTags());
+            postLogger.info("Пост создан с тегами: {}", tagDtos.stream().map(TagDto::getName).toList());
+
         } catch (ResponseStatusException e) {
             postLogger.error("пользователь с id {} не найден при попытке создать пост", userId);
             throw e;

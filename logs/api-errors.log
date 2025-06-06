@@ -92,3 +92,630 @@
 2025-06-07 00:11:15 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
 2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
 2025-06-07 00:11:15 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:16:03 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:16:03 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:16:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:16:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:16:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:48:43 INFO  o.j.s.Semwork2semApplication - Starting Semwork2semApplication using Java 17.0.12 with PID 11276 (C:\programming\oris\semwork_2sem\target\classes started by Полина in C:\programming\oris\semwork_2sem)
+2025-06-07 00:48:43 INFO  o.j.s.Semwork2semApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:48:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:48:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 5 JPA repository interfaces.
+2025-06-07 00:48:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:48:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:48:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:48:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-07 00:48:46 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:48:46 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2669 ms
+2025-06-07 00:48:46 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:48:47 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-07 00:48:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:48:47 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:48:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:48:48 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@238ad211
+2025-06-07 00:48:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:48:48 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:48:50 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:48:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:48:52 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:48:53 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:48:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 23 mappings in 'requestMappingHandlerMapping'
+2025-06-07 00:48:53 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /files/**] in 'resourceHandlerMapping'
+2025-06-07 00:48:54 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-07 00:48:54 DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-06-07 00:48:54 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-07 00:48:54 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-07 00:48:54 DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+2025-06-07 00:48:54 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:48:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:48:54 INFO  o.j.s.Semwork2semApplication - Started Semwork2semApplication in 12.112 seconds (process running for 13.377)
+2025-06-07 00:48:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:48:55 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@23c6556b
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@78edbe01
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-07 00:48:55 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-07 00:48:55 DEBUG o.s.security.web.FilterChainProxy - Securing GET /signUp
+2025-06-07 00:48:55 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:48:55 DEBUG o.s.security.web.FilterChainProxy - Secured GET /signUp
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/signUp", parameters={}
+2025-06-07 00:48:55 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.SignUpController#getSignUpPage()
+2025-06-07 00:48:55 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:48:55 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [sign_up_page], model {}
+2025-06-07 00:48:55 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [sign_up_page.ftlh]
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:48:55 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/signUp.css
+2025-06-07 00:48:55 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/logoMini.png
+2025-06-07 00:48:55 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/logoMini.png
+2025-06-07 00:48:55 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/signUp.css
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/logoMini.png", parameters={}
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/signUp.css", parameters={}
+2025-06-07 00:48:55 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:48:55 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:48:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:48:55 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:48:55 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:48:57 DEBUG o.s.security.web.FilterChainProxy - Securing GET /signIn
+2025-06-07 00:48:57 DEBUG o.s.security.web.FilterChainProxy - Secured GET /signIn
+2025-06-07 00:48:57 DEBUG o.s.web.servlet.DispatcherServlet - GET "/signIn", parameters={}
+2025-06-07 00:48:57 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.SignInController#getSignInPage()
+2025-06-07 00:48:57 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:48:57 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [sign_in_page], model {}
+2025-06-07 00:48:57 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [sign_in_page.ftlh]
+2025-06-07 00:48:57 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:48:57 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:48:57 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/signIn.css
+2025-06-07 00:48:57 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/signIn.css
+2025-06-07 00:48:57 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/signIn.css", parameters={}
+2025-06-07 00:48:57 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:48:57 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/logoMini.png
+2025-06-07 00:48:57 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/logoMini.png
+2025-06-07 00:48:57 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/logoMini.png", parameters={}
+2025-06-07 00:48:57 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:48:57 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:48:57 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:48:57 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:48:57 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:49:00 DEBUG o.s.security.web.FilterChainProxy - Securing POST /signIn
+2025-06-07 00:49:00 DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-06-07 00:49:00 DEBUG o.s.s.w.a.s.ChangeSessionIdAuthenticationStrategy - Changed session id from ACC1AC61C242B748F76CB2B15B55DD03
+2025-06-07 00:49:00 DEBUG o.s.s.w.c.CsrfAuthenticationStrategy - Replaced CSRF Token
+2025-06-07 00:49:00 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@203e9039]
+2025-06-07 00:49:00 DEBUG o.s.s.w.a.UsernamePasswordAuthenticationFilter - Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]
+2025-06-07 00:49:00 DEBUG o.s.s.web.DefaultRedirectStrategy - Redirecting to /globalFeed
+2025-06-07 00:49:00 DEBUG o.s.security.web.FilterChainProxy - Securing GET /globalFeed
+2025-06-07 00:49:00 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:00 DEBUG o.s.security.web.FilterChainProxy - Secured GET /globalFeed
+2025-06-07 00:49:00 DEBUG o.s.web.servlet.DispatcherServlet - GET "/globalFeed", parameters={}
+2025-06-07 00:49:00 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.FeedController#getGlobalFeedPage(MyUserDetails, Model)
+2025-06-07 00:49:01 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:49:01 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [feed_global_page], model {posts=[PostDto(id=53, date=2025-06-06T22:24:53.865681, text=dfghj, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[FileInfo(id=61, originalFileName=Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, storageFileName=91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, type=audio/mpeg, size=4191745, url=C:\programming\oris\semwork_2sem\uploads\91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, posts=[Post(postId=53, text=dfghj, date=2025-06-06T22:24:53.865681, tags=[])])]), PostDto(id=52, date=2025-06-06T20:02:31.425024, text=12345, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[FileInfo(id=60, originalFileName=Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, storageFileName=e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, type=audio/mpeg, size=4191745, url=C:\programming\oris\semwork_2sem\uploads\e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, posts=[Post(postId=52, text=12345, date=2025-06-06T20:02:31.425024, tags=[])])]), PostDto(id=51, date=2025-06-06T19:56:09.994954, text=123456, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[FileInfo(id=59, originalFileName=The Hatters - Город поет.mp3, storageFileName=e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3, type=audio/mpeg, size=5858782, url=C:\programming\oris\semwork_2sem\uploads\e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3, posts=[Post(postId=51, text=123456, date=2025-06-06T19:56:09.994954, tags=[])])]), PostDto(id=50, date=2025-06-06T19:50:01.717056, text=1234567891234567891234567ui, userId=1, username=user, likesCount=1, likedOrNo=true, tags=[], files=[]), PostDto(id=49, date=2025-06-06T19:49:37.160848, text=123456, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=48, date=2025-06-06T11:28:40.135915, text=1234567890, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@197682b9], files=[]), PostDto(id=47, date=2025-06-06T10:52:37.385278, text=wdefghjk, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@197682b9], files=[]), PostDto(id=46, date=2025-06-04T22:32:22.375081, text=ывавыа, userId=4, username=admin, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@19e5f863], files=[]), PostDto(id=45, date=2025-06-04T21:59:20.035710, text=xdfghbj, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=44, date=2025-06-04T21:59:08.174157, text=ghj, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=43, date=2025-06-04T21:59:00.165766, text=qwe, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=42, date=2025-06-04T21:31:33.119096, text=123, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@5e49ab08], files=[]), PostDto(id=41, date=2025-06-04T21:05:53.179929, text=sdfsdf, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=40, date=2025-06-04T21:02:01.443363, text=fsdfsd, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=39, date=2025-06-04T20:58:15.092741, text=1234567890, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[])], currentId=1}
+2025-06-07 00:49:01 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [feed_global_page.ftlh]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/header.css
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/header.css
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/header.css", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/post.css
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/post.css
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/feed.css
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/feed.css
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/feed.css", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/post.css", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/logoMini.png
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/logoMini.png
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/logoMini.png", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/global.css
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/global.css
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/global.css", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/empty-heart.png
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/empty-heart.png
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/empty-heart.png", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /like.js
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /like.js
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/like.js", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/comment.png
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/comment.png
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/comment.png", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/like2.png
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/like2.png
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/like2.png", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:01 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource 91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:01 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3.]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:01 MSK 2025, status=404, error=Not Found, message=No static resource 91a (truncated)...]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:01 MSK 2025, status=404, error=Not Found, message=No static resource e99 (truncated)...]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:01 MSK 2025, status=404, error=Not Found, message=No static resource e12 (truncated)...]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource 91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3.]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:01 MSK 2025, status=404, error=Not Found, message=No static resource 91a (truncated)...]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:01 MSK 2025, status=404, error=Not Found, message=No static resource e99 (truncated)...]
+2025-06-07 00:49:01 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:01 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:01 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:01 MSK 2025, status=404, error=Not Found, message=No static resource e12 (truncated)...]
+2025-06-07 00:49:01 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /profile/1
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /profile/1
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/profile/1", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.ProfileController#getProfilePage(Long, Model, MyUserDetails)
+2025-06-07 00:49:22 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:49:22 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [profile_page], model {email=user@email.com, countFollowers=0, countFollowing=1, currentId=1, userId=1, isOwner=true, posts=[PostDto(id=53, date=2025-06-06T22:24:53.865681, text=dfghj, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[FileInfo(id=61, originalFileName=Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, storageFileName=91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, type=audio/mpeg, size=4191745, url=C:\programming\oris\semwork_2sem\uploads\91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, posts=[Post(postId=53, text=dfghj, date=2025-06-06T22:24:53.865681, tags=[])])]), PostDto(id=52, date=2025-06-06T20:02:31.425024, text=12345, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[FileInfo(id=60, originalFileName=Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, storageFileName=e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, type=audio/mpeg, size=4191745, url=C:\programming\oris\semwork_2sem\uploads\e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3, posts=[Post(postId=52, text=12345, date=2025-06-06T20:02:31.425024, tags=[])])]), PostDto(id=51, date=2025-06-06T19:56:09.994954, text=123456, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[FileInfo(id=59, originalFileName=The Hatters - Город поет.mp3, storageFileName=e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3, type=audio/mpeg, size=5858782, url=C:\programming\oris\semwork_2sem\uploads\e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3, posts=[Post(postId=51, text=123456, date=2025-06-06T19:56:09.994954, tags=[])])]), PostDto(id=50, date=2025-06-06T19:50:01.717056, text=1234567891234567891234567ui, userId=1, username=user, likesCount=1, likedOrNo=true, tags=[], files=[]), PostDto(id=49, date=2025-06-06T19:49:37.160848, text=123456, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=48, date=2025-06-06T11:28:40.135915, text=1234567890, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@480ca487], files=[]), PostDto(id=47, date=2025-06-06T10:52:37.385278, text=wdefghjk, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@480ca487], files=[]), PostDto(id=45, date=2025-06-04T21:59:20.035710, text=xdfghbj, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=44, date=2025-06-04T21:59:08.174157, text=ghj, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=43, date=2025-06-04T21:59:00.165766, text=qwe, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=42, date=2025-06-04T21:31:33.119096, text=123, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[org.jetbrains.semwork_2sem.models.Tag@448bfdca], files=[]), PostDto(id=41, date=2025-06-04T21:05:53.179929, text=sdfsdf, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=40, date=2025-06-04T21:02:01.443363, text=fsdfsd, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[]), PostDto(id=39, date=2025-06-04T20:58:15.092741, text=1234567890, userId=1, username=user, likesCount=0, likedOrNo=false, tags=[], files=[])], role=false, username=user}
+2025-06-07 00:49:22 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [profile_page.ftlh]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/header.css
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/header.css
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/header.css", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/logoMini.png
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/logoMini.png
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/logoMini.png", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/global.css
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/profile.css
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/post.css
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/empty-heart.png
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/global.css
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/empty-heart.png
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/global.css", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/empty-heart.png", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/profile.css
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/post.css
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/post.css", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/profile.css", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /like.js
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/comment.png
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/comment.png
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /like.js
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/comment.png", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/like2.png
+2025-06-07 00:49:22 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/like2.png
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource 91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/like2.png", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/like.js", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:22 MSK 2025, status=404, error=Not Found, message=No static resource 91a (truncated)...]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:22 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3.]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:22 MSK 2025, status=404, error=Not Found, message=No static resource e12 (truncated)...]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:22 MSK 2025, status=404, error=Not Found, message=No static resource e99 (truncated)...]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3
+2025-06-07 00:49:22 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e99b261f-8211-4776-b1b6-9eebaf861c12_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /files/e12389f1-431d-4d70-9384-a89c432d3605_The Hatters - Город поет.mp3
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - GET "/files/e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource 91ad69ed-5cdc-4b18-bf5c-6b0c2910699f_Lady_Gaga_Bruno_Mars_-_Die_With_A_Smile_78229086.mp3.]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [URL [file:/C:/programming/oris/semwork_2sem/uploads/]]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:22 MSK 2025, status=404, error=Not Found, message=No static resource e99 (truncated)...]
+2025-06-07 00:49:22 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource e12389f1-431d-4d70-9384-a89c432d3605_The%20Hatters%20-%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%20%D0%BF%D0%BE%D0%B5%D1%82.mp3.]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:22 DEBUG o.s.security.web.FilterChainProxy - Secured GET /error
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:22 MSK 2025, status=404, error=Not Found, message=No static resource e12 (truncated)...]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-07 00:49:22 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jun 07 00:49:22 MSK 2025, status=404, error=Not Found, message=No static resource 91a (truncated)...]
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:22 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Securing GET /createPost
+2025-06-07 00:49:26 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Secured GET /createPost
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - GET "/createPost", parameters={}
+2025-06-07 00:49:26 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.PostController#getFilesUploadPage(Model, MyUserDetails)
+2025-06-07 00:49:26 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:49:26 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [post_upload_page], model {currentId=1}
+2025-06-07 00:49:26 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [post_upload_page.ftlh]
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/createPost.css
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/createPost.css
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/createPost.css", parameters={}
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/header.css
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/header.css
+2025-06-07 00:49:26 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/header.css", parameters={}
+2025-06-07 00:49:26 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:26 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/logoMini.png
+2025-06-07 00:49:26 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/logoMini.png
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/logoMini.png", parameters={}
+2025-06-07 00:49:26 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:26 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:49:26 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:49:26 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository - Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.jetbrains.semwork_2sem.security.details.MyUserDetails@2bd4ccf, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=ACC1AC61C242B748F76CB2B15B55DD03], Granted Authorities=[USER]]]
+2025-06-07 00:52:07 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:52:08 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:52:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:52:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:52:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:54:07 INFO  o.j.s.Semwork2semApplication - Starting Semwork2semApplication using Java 17.0.12 with PID 10728 (C:\programming\oris\semwork_2sem\target\classes started by Полина in C:\programming\oris\semwork_2sem)
+2025-06-07 00:54:07 INFO  o.j.s.Semwork2semApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:54:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:54:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128 ms. Found 5 JPA repository interfaces.
+2025-06-07 00:54:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:54:09 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:54:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:54:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-07 00:54:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:54:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2387 ms
+2025-06-07 00:54:09 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:54:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-07 00:54:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:54:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:54:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:54:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e3b2dd3
+2025-06-07 00:54:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:54:10 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:54:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:54:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:54:14 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:54:15 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:54:16 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 23 mappings in 'requestMappingHandlerMapping'
+2025-06-07 00:54:16 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /files/**] in 'resourceHandlerMapping'
+2025-06-07 00:54:16 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-07 00:54:16 DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-06-07 00:54:16 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-07 00:54:16 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-07 00:54:16 DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+2025-06-07 00:54:16 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:54:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:54:16 INFO  o.j.s.Semwork2semApplication - Started Semwork2semApplication in 11.043 seconds (process running for 12.048)
+2025-06-07 00:54:24 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 00:54:24 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 00:54:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:54:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 00:54:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 00:54:28 INFO  o.j.s.Semwork2semApplication - Starting Semwork2semApplication using Java 17.0.12 with PID 5284 (C:\programming\oris\semwork_2sem\target\classes started by Полина in C:\programming\oris\semwork_2sem)
+2025-06-07 00:54:28 INFO  o.j.s.Semwork2semApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:54:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:54:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 5 JPA repository interfaces.
+2025-06-07 00:54:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:54:30 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:54:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:54:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-07 00:54:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:54:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2249 ms
+2025-06-07 00:54:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:54:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-07 00:54:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:54:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:54:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:54:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@500ec769
+2025-06-07 00:54:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:54:32 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:54:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:54:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:54:35 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:54:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:54:37 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-07 00:54:37 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:54:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:54:37 INFO  o.j.s.Semwork2semApplication - Started Semwork2semApplication in 10.173 seconds (process running for 11.184)
+2025-06-07 00:54:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:54:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:54:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-07 01:04:09 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:04:10 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:04:11 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:29:42 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:29:42 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:48:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 01:48:34 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 01:48:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 01:48:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 01:48:34 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 01:48:39 INFO  o.j.s.Semwork2semApplication - Starting Semwork2semApplication using Java 17.0.12 with PID 16916 (C:\programming\oris\semwork_2sem\target\classes started by Полина in C:\programming\oris\semwork_2sem)
+2025-06-07 01:48:39 INFO  o.j.s.Semwork2semApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 01:48:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 01:48:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 5 JPA repository interfaces.
+2025-06-07 01:48:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 01:48:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-07 01:48:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 01:48:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-07 01:48:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 01:48:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2631 ms
+2025-06-07 01:48:42 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 01:48:42 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-07 01:48:42 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 01:48:42 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 01:48:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 01:48:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3cf8a235
+2025-06-07 01:48:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 01:48:43 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 01:48:45 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 01:48:46 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 01:48:47 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 01:48:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 01:48:48 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-07 01:48:49 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-07 01:48:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 01:48:49 INFO  o.j.s.Semwork2semApplication - Started Semwork2semApplication in 11.592 seconds (process running for 12.984)
+2025-06-07 01:48:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 01:48:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 01:48:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-07 01:49:26 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:49:27 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:49:28 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2025-06-07 01:52:02 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 01:52:02 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 01:52:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 01:52:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 01:52:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-07 02:01:59 INFO  o.j.s.Semwork2semApplication - Starting Semwork2semApplication using Java 17.0.12 with PID 17384 (C:\programming\oris\semwork_2sem\target\classes started by Полина in C:\programming\oris\semwork_2sem)
+2025-06-07 02:01:59 INFO  o.j.s.Semwork2semApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 02:02:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 02:02:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 5 JPA repository interfaces.
+2025-06-07 02:02:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 02:02:01 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-07 02:02:01 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 02:02:01 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-07 02:02:01 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 02:02:01 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1463 ms
+2025-06-07 02:02:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 02:02:01 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-07 02:02:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 02:02:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 02:02:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 02:02:02 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e3b2dd3
+2025-06-07 02:02:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 02:02:02 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 02:02:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 02:02:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 02:02:04 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 02:02:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 02:02:04 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-07 02:02:05 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-07 02:02:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 02:02:05 INFO  o.j.s.Semwork2semApplication - Started Semwork2semApplication in 6.256 seconds (process running for 6.99)
+2025-06-07 02:02:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 02:02:05 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 02:02:05 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-06-07 02:12:40 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-07 02:12:40 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-07 02:12:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 02:12:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-07 02:12:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

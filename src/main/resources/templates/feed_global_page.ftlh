@@ -28,6 +28,7 @@
                 <li><a href="/subscribeFeed">лента подписок</a></li>
                 <li><a href="/topAuthors">топ авторов</a></li>
                 <li><a href="/tag/demo">демки</a></li>
+                <li><a href="/randomJoke">шуточка</a></li>
             </ul>
         </nav>
     </div>

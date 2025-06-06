@@ -1,0 +1,33 @@
+.random-joke-div {
+    width: 80%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #f8f4eb;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.random-joke-div h1 {
+    color: #171716;
+    margin-bottom: 1rem;
+}
+
+.joke-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    color: #171716;
+}
+
+button {
+    background: #343232;
+    color:#f8f4eb;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #171414;
+}

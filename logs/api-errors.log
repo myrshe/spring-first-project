@@ -1,0 +1,94 @@
+2025-06-07 00:11:03 INFO  o.j.s.Semwork2semApplication - Starting Semwork2semApplication using Java 17.0.12 with PID 18300 (C:\programming\oris\semwork_2sem\target\classes started by Полина in C:\programming\oris\semwork_2sem)
+2025-06-07 00:11:03 INFO  o.j.s.Semwork2semApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-07 00:11:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-07 00:11:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 5 JPA repository interfaces.
+2025-06-07 00:11:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-07 00:11:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:11:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-07 00:11:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-07 00:11:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-07 00:11:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1187 ms
+2025-06-07 00:11:04 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-07 00:11:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-07 00:11:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-07 00:11:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-07 00:11:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-07 00:11:05 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1ff463bb
+2025-06-07 00:11:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-07 00:11:05 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-07 00:11:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-07 00:11:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-07 00:11:07 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-07 00:11:07 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-07 00:11:07 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 23 mappings in 'requestMappingHandlerMapping'
+2025-06-07 00:11:07 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /files/**] in 'resourceHandlerMapping'
+2025-06-07 00:11:07 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-07 00:11:07 DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-06-07 00:11:07 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-07 00:11:07 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-07 00:11:07 DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - File system access not preferred: using SpringTemplateLoader
+2025-06-07 00:11:07 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-07 00:11:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-07 00:11:08 INFO  o.j.s.Semwork2semApplication - Started Semwork2semApplication in 5.077 seconds (process running for 5.583)
+2025-06-07 00:11:13 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:11:13 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1362f4
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2cde0397
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-07 00:11:13 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-07 00:11:13 DEBUG o.s.security.web.FilterChainProxy - Securing GET /signUp
+2025-06-07 00:11:13 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:11:13 DEBUG o.s.security.web.FilterChainProxy - Secured GET /signUp
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/signUp", parameters={}
+2025-06-07 00:11:13 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.SignUpController#getSignUpPage()
+2025-06-07 00:11:13 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:11:13 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [sign_up_page], model {}
+2025-06-07 00:11:13 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [sign_up_page.ftlh]
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:11:13 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/logoMini.png
+2025-06-07 00:11:13 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/signUp.css
+2025-06-07 00:11:13 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/logoMini.png
+2025-06-07 00:11:13 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/signUp.css
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/signUp.css", parameters={}
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/logoMini.png", parameters={}
+2025-06-07 00:11:13 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:11:13 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:11:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:11:13 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:11:13 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:11:15 DEBUG o.s.security.web.FilterChainProxy - Securing POST /signUp
+2025-06-07 00:11:15 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:11:15 DEBUG o.s.security.web.FilterChainProxy - Secured POST /signUp
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - POST "/signUp", parameters={masked}
+2025-06-07 00:11:15 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.jetbrains.semwork_2sem.controllers.SignUpController#signUp(UserForm)
+2025-06-07 00:11:15 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler org.jetbrains.semwork_2sem.exceptions.GlobalExceptionHandler#handleStatusException(ResponseStatusException, Model)
+2025-06-07 00:11:15 ERROR o.j.s.e.GlobalExceptionHandler - Ошибка обработки запроса: пользователь с таким именем уже существует
+2025-06-07 00:11:15 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "пользователь с таким именем уже существует"] to ModelAndView [view="error"; model={status=400, errorMessage=400 BAD_REQUEST "пользователь с таким именем уже существует", error=пользователь с таким именем уже существует}]
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - Using resolved error view: ModelAndView [view="error"; model={status=400, errorMessage=400 BAD_REQUEST "пользователь с таким именем уже существует", error=пользователь с таким именем уже существует}]
+2025-06-07 00:11:15 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-06-07 00:11:15 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [error], model {status=400, errorMessage=400 BAD_REQUEST "пользователь с таким именем уже существует", error=пользователь с таким именем уже существует}
+2025-06-07 00:11:15 DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [error.ftlh]
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:11:15 DEBUG o.s.security.web.FilterChainProxy - Securing GET /images/cat.png
+2025-06-07 00:11:15 DEBUG o.s.security.web.FilterChainProxy - Securing GET /css/error.css
+2025-06-07 00:11:15 DEBUG o.s.security.web.FilterChainProxy - Secured GET /images/cat.png
+2025-06-07 00:11:15 DEBUG o.s.security.web.FilterChainProxy - Secured GET /css/error.css
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - GET "/images/cat.png", parameters={}
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/error.css", parameters={}
+2025-06-07 00:11:15 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:11:15 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [static/], ServletContext [/]]
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:11:15 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-07 00:11:15 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-07 00:11:15 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext

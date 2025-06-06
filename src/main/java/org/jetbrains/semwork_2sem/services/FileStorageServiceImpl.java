@@ -1,18 +1,15 @@
 package org.jetbrains.semwork_2sem.services;
 
-import jakarta.servlet.http.HttpServletResponse;
-import org.apache.commons.io.IOUtils;
 import org.jetbrains.semwork_2sem.models.FileInfo;
 import org.jetbrains.semwork_2sem.repository.FileInfoRepository;
 import org.jetbrains.semwork_2sem.services.intefaces.FileStorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.server.ResponseStatusException;
 
-
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -53,16 +50,5 @@ public class FileStorageServiceImpl implements FileStorageService {
         }
 //        filesInfoRepository.save(file);
         return file;
-    }
-
-    @Override
-    public void writeFileToResponse(String fileName, HttpServletResponse response) {
-        FileInfo fileInfo = filesInfoRepository.findByStorageFileName(fileName);
-        response.setContentType(fileInfo.getType());
-        try {
-            IOUtils.copy(new FileInputStream(fileInfo.getUrl()), response.getOutputStream());
-        } catch (IOException e) {
-            throw new IllegalStateException(e);
-        }
     }
 }

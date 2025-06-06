@@ -12,4 +12,7 @@ public interface UsersRepository extends JpaRepository<User, Long> {
 
     @Query(value = "select * from account order by count_followers desc limit 3", nativeQuery = true)
     List<User> findTop3User();
+
+    boolean existsByEmail(String email);
+    boolean existsByUsername(String username);
 }

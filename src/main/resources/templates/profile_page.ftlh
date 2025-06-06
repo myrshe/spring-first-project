@@ -47,10 +47,10 @@
                 <div class="div-name"><h1>Добро пожаловать, ${username}</h1></div>
                 <div class="div-email"><h2>Email: ${email}</h2></div>
                 <div class="count-followers">
-                    <a href="/profile/${userId}/followers">${countFollowers} подписчики</a>
+                    <p>${countFollowers} подписчики</p>
                 </div>
                 <div class="count-following">
-                    <a href="/profile/${userId}/followings">${countFollowing} подписки</a>
+                    <p>${countFollowing} подписки</p>
                 </div>
                 <div class="div-createPost">
                     <h4><a href="/createPost">+ Создать пост</a></h4>

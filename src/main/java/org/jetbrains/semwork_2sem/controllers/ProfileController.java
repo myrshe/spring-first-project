@@ -1,6 +1,5 @@
 package org.jetbrains.semwork_2sem.controllers;
 
-import jakarta.servlet.http.HttpServletResponse;
 import org.jetbrains.semwork_2sem.dto.PostDto;
 import org.jetbrains.semwork_2sem.dto.UserDto;
 import org.jetbrains.semwork_2sem.models.Role;
@@ -29,18 +28,20 @@ public class ProfileController {
     public String getProfilePage(@PathVariable("userId") Long profileId,
                                  Model model,
                                  @AuthenticationPrincipal MyUserDetails currentUser) {
+
         Long currentUserId = currentUser.getUser().getId();
         boolean isOwner = profileId.equals(currentUserId);
+
         UserDto userProfile = userService.findUserById(profileId);
+
+
         if (isOwner) {
-
             model.addAttribute("email", userProfile.getEmail());
-
         } else {
-
             boolean checkFollowing = userService.checkFollow(currentUserId, profileId);
             model.addAttribute("checkFollowing", checkFollowing);//тут проверка на подписку
         }
+
         List<PostDto> allProfilePosts = postService.getAllPostsByUserId(profileId, currentUserId);
 
         int countFollowers = userService.countFollowers(profileId);
@@ -59,6 +60,8 @@ public class ProfileController {
         model.addAttribute("role", isAdmin);
         model.addAttribute("username", userProfile.getUsername());
         return "profile_page";
+
+
     }
 
 
@@ -67,8 +70,6 @@ public class ProfileController {
                          @AuthenticationPrincipal MyUserDetails currentUser) {
         Long currentUserId = currentUser.getUser().getId();
         userService.subscribe(currentUserId,profileId);
-
-
         return "redirect:/profile/" +profileId;
     }
 }

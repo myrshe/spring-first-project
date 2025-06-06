@@ -29,14 +29,14 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/signUp", "/signIn").anonymous()//только для неавторизованных пользователей
                         .requestMatchers("/static/**", "/images/**", "/css/**", "/files/**", "/**.js").permitAll()
-                        .requestMatchers("/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/allComments/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
                         .loginPage("/signIn")
                         .usernameParameter("username")
                         .passwordParameter("password")
-                        .defaultSuccessUrl("/profile", true)
+                        .defaultSuccessUrl("/globalFeed", true)
                         .failureUrl("/signIn?error=true")
                         .permitAll()
                 )

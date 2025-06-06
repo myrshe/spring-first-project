@@ -1,4 +1,4 @@
-package org.jetbrains.semwork_2sem.controllers;
+package org.jetbrains.semwork_2sem.controllers.api;
 
 import org.jetbrains.semwork_2sem.dto.CommentDto;
 import org.jetbrains.semwork_2sem.models.Role;

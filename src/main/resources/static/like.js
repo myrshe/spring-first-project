@@ -18,12 +18,12 @@ function toggleLike(postId, button) {
             const liked = button.getAttribute('data-liked') === 'true';
 
             if (liked) {
-                // Был лайк — убираем
+                // был лайк — убираем
                 likeIcon.src = "/images/empty-heart.png";
                 button.setAttribute('data-liked', 'false');
                 likeCountSpan.textContent = likeCount - 1;
             } else {
-                // Не было лайка — ставим
+                // не было лайка — ставим
                 likeIcon.src = "/images/like2.png";
                 button.setAttribute('data-liked', 'true');
                 likeCountSpan.textContent = likeCount + 1;
